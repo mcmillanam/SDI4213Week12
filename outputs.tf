@@ -4,3 +4,7 @@ output "portal_url" {
 }
 
 # WEEK 12 TODO (Milestone 6): Add an adminer_url output.
+output "adminer_url" {
+  description = "URL for the Adminer database interface."
+  value       = "http://localhost:${var.adminer_port}"
+}

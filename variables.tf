@@ -12,6 +12,26 @@ variable "web_port" {
 
 # WEEK 12 TODO (Milestone 6): Add variables for:
 # - adminer_port (number; suggested default 8081)
+variable "adminer_port" {
+  description = "Host port for Week 12 database"
+  type        = number
+  default     = 8081
+}
 # - postgres_db (string; suggested value helpdesk)
+variable "postgres_db" {
+  description = "Name of database"
+  type        = string
+  default     = "helpdesk"
+}
 # - postgres_user (string; suggested value student)
+variable "postgres_user" {
+  description = "Username in database"
+  type        = string
+  default     = "student"
+}
 # - postgres_password (string; sensitive = true; NO default)
+variable "postgres_password" {
+  description = "PostgreSQL database password"
+  type        = string
+  sensitive   = true
+}
